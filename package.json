@@ -1,6 +1,6 @@
 {
   "name": "tagrid",
-  "version": "1.0.0",
+  "version": "v1.1.0",
   "description": "",
   "bin": {
     "tagrid": "./index.js"
