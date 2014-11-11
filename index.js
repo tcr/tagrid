@@ -29,7 +29,7 @@ var since = exec('git rev-list ' + latest + '..HEAD --oneline', {silent: true}).
 // Dump significant commits.
 var anysignificant = false;
 console.error('|', since.length, 'commits since last version.')
-since.some(function (line) {
+since.reverse().forEach(function (line) {
   console.error('|', line);
 });
 
@@ -53,7 +53,7 @@ if (hasmajor) {
 next = next.replace(/^v?/, 'v');
 console.log(next);
 
-if (process.argv.indexOf('--dry')) {
+if (process.argv.indexOf('--commit') == -1) {
   return;
 }
 
