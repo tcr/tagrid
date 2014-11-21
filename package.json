@@ -1,6 +1,6 @@
 {
   "name": "tagrid",
-  "version": "v1.1.1",
+  "version": "v1.2.0",
   "description": "Semversioning through git commits with [major], [minor], and [patch] tags.",
   "bin": {
     "tagrid": "./index.js"
